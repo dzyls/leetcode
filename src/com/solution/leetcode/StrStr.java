@@ -9,38 +9,20 @@ package com.solution.leetcode;
  **/
 public class StrStr {
 
-
-
     public int strStr(String haystack, String needle) {
-
-        if (needle.length() ==0){
+        int length1 = haystack.length();
+        int length2 = needle.length();
+        if (length1 < length2){
+            return -1;
+        }else if (length2 == 0){
             return 0;
-        }else if (haystack.length() == 0){
-            return  -1;
         }
-
-        char[] chars1 = haystack.toCharArray();
-        char[] chars2 = needle.toCharArray();
-        for (int i = 0; i < chars1.length; i++) {
-            if (chars1[i] == chars2[0]){
-                for (int j = 0; j < chars2.length; j++) {
-                    int index = i + j;
-                    if (index >= chars1.length ){
-                        break;
-                    }
-                    if (chars2[j] != chars1[index]){
-                        break;
-                    }
-                    if (j == chars2.length -1 && chars2[j] == chars1[index]){
-                        return i;
-                    }
-                }
+        for (int i = 0; i < length1 - length2; i++) {
+            if (haystack.substring(i,i+length2).equals(needle)){
+                return i;
             }
         }
         return -1;
-
     }
-
-
 
 }
