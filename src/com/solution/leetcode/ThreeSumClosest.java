@@ -1,7 +1,7 @@
 package com.solution.leetcode;
 
 /**
- * @Author xingdenghui
+ * @Author dzyls
  * @Description
  * @Time 2018/9/21 10:28
  **/

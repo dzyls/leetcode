@@ -3,7 +3,7 @@ package com.solution.leetcode;
 import java.util.Arrays;
 
 /**
- * @Author xingdenghui
+ * @Author dzyls
  * @Description 34.在排序数组中查找元素的第一个和最后一个位置
  * @Time 2018/9/21 9:49
  **/
