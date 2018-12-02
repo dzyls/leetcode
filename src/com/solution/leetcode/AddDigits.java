@@ -2,7 +2,7 @@ package com.solution.leetcode;
 
 /**
  * @Author dzyls
- * @Description 258.¸÷Î»Ïà¼Ó
+ * @Description 258.ï¿½ï¿½Î»ï¿½ï¿½ï¿½
  * @Time 2018/9/29 19:39
  **/
 public class AddDigits {
@@ -13,7 +13,7 @@ public class AddDigits {
         char[] chars = s.toCharArray();
         int n = 0;
         for (char c : chars) {
-            n += (c - '0');
+            n += (c - '0'); 
         }
         if (n /10 == 0){
             return n;
